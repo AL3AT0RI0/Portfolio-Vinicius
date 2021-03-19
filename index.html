@@ -150,12 +150,12 @@
       		</div>
       		<div class="col s4" align="center">
         		<h6 class="white-text" align="center">Telefone</h6>
-        		<img src="imgs/telefone.png" width="30%" id="img"><br>
+        		<img src="imgs/telefone.png" width="30%" id="img1"><br>
         		<u><a class="white-text"  href="tel:11966158503">(11) 96615-8503</a></u>
       		</div>
       		<div class="col s4" align="center">
         		<h6 class="white-text" align="center">Linkedln</h6>
-        		<img src="imgs/linkedln.png" width="30%" id="img"><br>
+        		<img src="imgs/linkedln.png" width="30%" id="img2"><br>
         		<u><a class="white-text"  href="https://www.linkedin.com/in/vinicius-s0ares" target="new_blank">Vinicius Soares</a></u>
 
       		</div>
@@ -172,10 +172,17 @@
 		if ($(document).width() > 1000){  
     			$('#main').addClass("container");
   		}
+		$('#img').width("30%");
+		$('#img1').width("30%");
+		$('#img2').width("30%");
 		$('#img').height($('#img').width());
+		$('#img1').height($('#img1').width());
+		$('#img2').height($('#img2').width());
   	});
   	$(window).resize(function() {
 		$("#img").height($("#img").width());
+		$('#img1').height($('#img1').width());
+		$('#img2').height($('#img2').width());
   		if ($(document).width() > 1000){  
     			$('#main').addClass("container");
   		}
