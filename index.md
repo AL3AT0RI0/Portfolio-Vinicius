@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="stly.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    	<link rel="stylesheet" type="text/css" href="stly.css">
 	<meta charset="utf-8">
 	<title>Curriculo - Vinicius</title>
 </head>
 
 <body class="blue-grey darken-4">
-
 	<div id="main">
-		<!--Cabeçalho -->
+		
+		<!-- Cabeçalho -->
 		<div class="row">
 			<div class="col12 blue-grey darken-4">
 				<span class="white-text"><h2 align="center">Vinicius Soares</h2></span>
@@ -39,6 +39,13 @@
       				<!-- ESCOLARIDADE -->
       				<h5 id="escolaridade">Escolaridade</h5>
       				<ul class="collection">
+					<li class="collection-item avatar">
+      						<img src="imgs/chapeu.png" class="circle">
+      						<span class="title">Cursando Ciência da Computação</span>
+      						<p>UNIANCHIETA (Jundiaí-SP)<br>
+      							2021
+      						</p>
+      					</li>
       					<li class="collection-item avatar">
       						<img src="imgs/mochila.png" class="circle">
       						<span class="title">Ensino Médio</span>
@@ -51,13 +58,7 @@
       							</div>
       						</a>
       					</li>
-      					<li class="collection-item avatar">
-      						<img src="imgs/chapeu.png" class="circle">
-      						<span class="title">Cursando Ciência da Computação</span>
-      						<p>UNIANCHIETA (Jundiaí-SP)<br>
-      							2021
-      						</p>
-      					</li>
+      					
       				</ul>
 
       				<!-- FORMAÇÃO TÉCNICA -->
@@ -165,17 +166,16 @@
 
 <script type="text/javascript">
 	$(document).ready(function(){
-    	$('.materialboxed').materialbox();
-    	$('.sidenav').sidenav();
+    		$('.materialboxed').materialbox();
+    		$('.sidenav').sidenav();
 		$('.tabs').tabs();
 		if ($(document).width() > 1000){  
-    		$('#main').addClass("container");
+    			$('#main').addClass("container");
   		}
-
   	});
   	$(window).resize(function() {
   		if ($(document).width() > 1000){  
-    		$('#main').addClass("container");
+    			$('#main').addClass("container");
   		}
   		else{
   			$('#main').removeClass("container");
