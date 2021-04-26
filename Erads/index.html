@@ -5,6 +5,7 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<link rel="icon" href="img/icone.png" sizes="32x32">
+	<link rel="stylesheet" type="text/css" href="styl.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 	<meta charset="utf-8">
 	<title>Erads</title>
@@ -16,38 +17,34 @@
   	</div>
   	<!-- Conteudo -->
   	<div class="amber accent-4" id="main">
-      	<h3>Sobre</h3>
-      	<font size="7">Sobre</font>
-      	<font size="5"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-      	Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-      </font>
-    	<h3 class="black-text">Formas de contato</h3>
+      	<span class="" id="titulo">Sobre</span><br>
+      	<span class="" id="sobre">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      	Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</span><br>
+    	<span class="" id="titulo1">Formas de contato</span>
   		<div class="row">
-  			<div class="" id="divs"></div>
-      		<div class="col s4 m3 " align="center">
-        		<h5>WhastApp</h5>
-        		<a class="black-text" href="https://linkwhats.app/3086fb">
+      		<div class="col s4" align="center">
+        		<span class="" id="subtitulo">WhatsApp</span><br>
+        		<a class="black-text" id="whats" href="https://linkwhats.app/3086fb">
         			<i class="large material-icons">chat</i>
-          			<h6 class="black-text" align="center">Eduardo</h6>
+          			<br>Eduardo<br>
         			(11) 99599-3949
         		</a>
       		</div>
-      		<div class="col s4 " align="center">
-        		<h5>E-mail</h5>
-        		<a class="black-text" href="mailto:erads.du@gmail.com">
+      		<div class="col s4" align="center">
+        		<span class="" id="subtitulo1">E-mail</span><br>
+        		<a class="black-text" id="email" href="mailto:erads.du@gmail.com">
         			<i class="large material-icons">email</i><br>
         			erads.du@gmail.com
         		</a>
       		</div>
-      		<div class="col s4 m3 " align="center">
-        		<h5>WhastApp</h5>
-        		<a class="black-text" href="https://linkwhats.app/3086fb">
+      		<div class="col s4" align="center">
+        		<span class="" id="subtitulo2">WhatsApp</span><br>
+        		<a class="black-text" id="whats1" href="https://linkwhats.app/3086fb">
         			<i class="large material-icons">chat</i>
-          			<h6 class="black-text" align="center">Francisco</h6>
+          			<br>Francisco<br>
         			(11) 96491-9017
         		</a>
       		</div>
-      		<div class="" id="divs"></div>
 		</div>
 	</div>
     <!-- Rodapé -->
@@ -58,18 +55,96 @@
 </body>
 <script type="text/javascript">
 	$(document).ready(function(){
-		if ($(document).width() > 1000){  
+		if ($(document).width() > 1000){
+			//Conteudo total  
     		$('#main').addClass("container");
-    		$('#divs').addClass("col s0 m1");  		}
+    		//contatos
+    		$('#divs').addClass("col s0 m1");
+    		$('#divs1').addClass("col s0 m1");
+    		//Titulos grandes 
+    		$('#titulo').addClass("titulo3");
+    		$('#titulo1').addClass("titulo3");
+    		//Titulos de contato
+    		$('#subtitulo').addClass("titulo5");
+    		$('#subtitulo1').addClass("titulo5");
+    		$('#subtitulo2').addClass("titulo5");
+    		//Textos
+    		$('#sobre').addClass("textoNormal");
+    		$('#whats').addClass("textoNormal");
+    		$('#whats1').addClass("textoNormal");
+    		$('#email').addClass("textoNormal"); 		
+    	}
+    	else{
+    		//Titulos grandes 
+    		$('#titulo').addClass("titulo1");
+    		$('#titulo1').addClass("titulo1");
+    		//Titulos de contato
+    		$('#subtitulo').addClass("titulo3");
+    		$('#subtitulo1').addClass("titulo3");
+    		$('#subtitulo2').addClass("titulo3");
+    		//Textos
+    		$('#sobre').addClass("textoGrande");
+    		$('#whats').addClass("textoGrande");
+    		$('#whats1').addClass("textoGrande");
+    		$('#email').addClass("textoGrande"); 
+  		}
   	});
   	$(window).resize(function() {
   		if ($(document).width() > 1000){  
+  			//Conteudo total 
     		$('#main').addClass("container");
+    		//contatos
     		$('#divs').addClass("col s0 m1");
+    		$('#divs1').addClass("col s0 m1");
+    		//Titulos grandes
+    		$('#titulo').removeClass("titulo1");
+    		$('#titulo1').removeClass("titulo1");
+    		$('#titulo').addClass("titulo3");
+    		$('#titulo1').addClass("titulo3");
+    		//Titulos de contato
+    		$('#subtitulo').removeClass("titulo3");
+    		$('#subtitulo1').removeClass("titulo3");
+    		$('#subtitulo2').removeClass("titulo3");
+    		$('#subtitulo').addClass("titulo5");
+    		$('#subtitulo1').addClass("titulo5");
+    		$('#subtitulo2').addClass("titulo5");
+    		//Textos
+    		$('#sobre').removeClass("textoGrande");
+    		$('#whats').removeClass("textoGrande");
+    		$('#whats1').removeClass("textoGrande");
+    		$('#email').removeClass("textoGrande");
+    		$('#sobre').addClass("textoNormal");
+    		$('#whats').addClass("textoNormal");
+    		$('#whats1').addClass("textoNormal");
+    		$('#email').addClass("textoNormal"); 
   		}
   		else{
+  			//Conteudo total 
   			$('#main').removeClass("container");
+  			//contatos
   			$('#divs').removeClass("col s0 m1");
+  			$('#divs1').removeClass("col s0 m1");
+  			//Titulos grandes
+  			$('#titulo').removeClass("titulo3");
+    		$('#titulo1').removeClass("titulo3");
+    		$('#titulo').addClass("titulo1");
+    		$('#titulo1').addClass("titulo1");
+    		//Titulos de contato
+    		$('#subtitulo').removeClass("titulo5");
+    		$('#subtitulo1').removeClass("titulo5");
+    		$('#subtitulo2').removeClass("titulo5");
+    		$('#subtitulo').addClass("titulo3");
+    		$('#subtitulo1').addClass("titulo3");
+    		$('#subtitulo2').addClass("titulo3");
+    		//Textos
+    		$('#sobre').removeClass("textoNormal");
+    		$('#whats').removeClass("textoNormal");
+    		$('#whats1').removeClass("textoNormal");
+    		$('#email').removeClass("textoNormal");
+    		$('#sobre').addClass("textoGrande");
+    		$('#whats').addClass("textoGrande");
+    		$('#whats1').addClass("textoGrande");
+    		$('#email').addClass("textoGrande");
   		}
 	});
 </script>
