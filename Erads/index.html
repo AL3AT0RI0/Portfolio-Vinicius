@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link rel="icon" href="img/icone.png" sizes="32x32">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+	<meta charset="utf-8">
+	<title>Erads</title>
+</head>
+<body class="amber accent-4">
+	<!-- Cabeçalho -->
+	<div class="row red darken-2">
+    	<div class="col s12" id="logo"><img src="img/logo.png"></div>
+  	</div>
+  	<!-- Conteudo -->
+  	<div class="amber accent-4" id="main">
+      	<h3>Sobre</h3>
+      	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      	Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    	<h3 class="black-text">Formas de contato</h3>
+  		<div class="row">
+  			<div class="" id="divs"></div>
+      		<div class="col s4 m3 " align="center">
+        		<h5>WhastApp</h5>
+        		<a class="black-text" href="https://linkwhats.app/3086fb">
+        			<i class="large material-icons">chat</i>
+          			<h6 class="black-text" align="center">Eduardo</h6>
+        			(11) 99599-3949
+        		</a>
+      		</div>
+      		<div class="col s4 " align="center">
+        		<h5>E-mail</h5>
+        		<a class="black-text" href="mailto:erads.du@gmail.com">
+        			<i class="large material-icons">email</i><br>
+        			erads.du@gmail.com
+        		</a>
+      		</div>
+      		<div class="col s4 m3 " align="center">
+        		<h5>WhastApp</h5>
+        		<a class="black-text" href="https://linkwhats.app/3086fb">
+        			<i class="large material-icons">chat</i>
+          			<h6 class="black-text" align="center">Francisco</h6>
+        			(11) 96491-9017
+        		</a>
+      		</div>
+      		<div class="" id="divs"></div>
+		</div>
+	</div>
+    <!-- Rodapé -->
+	<div class="red darken-2 black-text">
+        Pagina feita por Vinicius Soares
+        <a class="black-text right" href="https://al3at0ri0.github.io/Portfolio-Vinicius/#!">Mais informações</a>
+    </div>
+</body>
+<script type="text/javascript">
+	$(document).ready(function(){
+		if ($(document).width() > 1000){  
+    		$('#main').addClass("container");
+    		$('#divs').addClass("col s0 m1");  		}
+  	});
+  	$(window).resize(function() {
+  		if ($(document).width() > 1000){  
+    		$('#main').addClass("container");
+    		$('#divs').addClass("col s0 m1");
+  		}
+  		else{
+  			$('#main').removeClass("container");
+  			$('#divs').removeClass("col s0 m1");
+  		}
+	});
+</script>
+</html>
