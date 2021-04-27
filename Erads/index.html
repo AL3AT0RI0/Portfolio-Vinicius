@@ -17,73 +17,84 @@
   	</div>
   	<!-- Conteudo -->
   	<div class="amber accent-4" id="main">
+
   		<!-- Serviços -->
-  		<span class="" id="titulo2">Serviços</span><br>
+  		<span class="titulos">Serviços</span><br>
   		<div class="row">
-    		<div class="col s4">
+
+  			<!-- Card Eletrica -->
+    		<div class="grid-example col">
       			<div class="card">
         			<div class="card-image">
           				<img src="img/cabos.jpg">
         			</div>
         			<div class="card-content">
-          				<p>Elétrica</p>
+          				<p class="textos">Elétrica</p>
         			</div>
         			<div class="card-action">
-          				<a href="#titulo1">Contratar</a>
+          				<a href="#contato">Contratar</a>
         			</div>
       			</div>
     		</div>
-    		<div class="col s4">
+
+    		<!-- Card Marido de Aluguel -->
+    		<div class="grid-example col">
       			<div class="card">
         			<div class="card-image">
           				<img src="img/tools.jpg">
         			</div>
         			<div class="card-content">
-          				<p>Marido de Aluguel</p>
+          				<p class="textos">Marido de Aluguel</p>
         			</div>
         			<div class="card-action">
-          				<a href="#titulo1">Contratar</a>
+          				<a href="#contato">Contratar</a>
         			</div>
       			</div>
     		</div>
-    		<div class="col s4">
+
+    		<!-- Card Solda -->
+    		<div class="grid-example col">
       			<div class="card">
         			<div class="card-image">
           				<img src="img/solda.jpg">
         			</div>
         			<div class="card-content">
-          				<p>Solda</p>
+          				<p class="textos">Solda</p>
         			</div>
         			<div class="card-action">
-          				<a href="#titulo1">Contratar</a>
+          				<a href="#contato">Contratar</a>
         			</div>
       			</div>
     		</div>
   		</div>
-  		<!-- Sobre -->
-      	<span class="" id="titulo">Sobre</span><br>
-      	<span class="" id="sobre">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-      	Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</span><br>
-    	<span class="" id="titulo1">Formas de contato</span>
+
+      	<!-- Formas de Contato -->
+    	<span class="titulos" id="contato">Formas de contato</span>
   		<div class="row">
+
+  			<!-- WhatsApp 1 -->
       		<div class="col s4" align="center">
-        		<span class="" id="subtitulo">WhatsApp</span><br>
-        		<a class="black-text" id="whats" href="https://linkwhats.app/3086fb">
+        		<span class="subtitulos">WhatsApp</span><br>
+        		<a class="textos black-text" href="https://linkwhats.app/3086fb">
         			<i class="large material-icons">chat</i>
           			<br>Eduardo<br>
         			(11) 99599-3949
         		</a>
       		</div>
+
+      		<!-- E-mail -->
       		<div class="col s4" align="center">
-        		<span class="" id="subtitulo1">E-mail</span><br>
-        		<a class="black-text" id="email" href="mailto:erads.du@gmail.com">
+        		<span class="subtitulos">E-mail</span><br>
+        		<a class="textos black-text" href="mailto:erads.du@gmail.com">
         			<i class="large material-icons">email</i><br>
         			erads.du@gmail.com
         		</a>
       		</div>
+
+      		<!-- WhatsApp 2 -->
       		<div class="col s4" align="center">
-        		<span class="" id="subtitulo2">WhatsApp</span><br>
-        		<a class="black-text" id="whats1" href="https://linkwhats.app/3086fb">
+        		<span class="subtitulos">WhatsApp</span><br>
+        		<a class="textos black-text" href="https://linkwhats.app/3086fb">
         			<i class="large material-icons">chat</i>
           			<br>Francisco<br>
         			(11) 96491-9017
@@ -91,6 +102,7 @@
       		</div>
 		</div>
 	</div>
+
     <!-- Rodapé -->
 	<div class="red darken-2 black-text">
         Pagina feita por Vinicius Soares
@@ -106,33 +118,23 @@
     		$('#divs').addClass("col s0 m1");
     		$('#divs1').addClass("col s0 m1");
     		//Titulos grandes 
-    		$('#titulo').addClass("titulo3");
-    		$('#titulo1').addClass("titulo3");
-    		$('#titulo2').addClass("titulo3");
+    		$('.titulos').addClass("titulo3");
     		//Titulos de contato
-    		$('#subtitulo').addClass("titulo5");
-    		$('#subtitulo1').addClass("titulo5");
-    		$('#subtitulo2').addClass("titulo5");
+    		$('.subtitulos').addClass("titulo5");
     		//Textos
-    		$('#sobre').addClass("textoNormal");
-    		$('#whats').addClass("textoNormal");
-    		$('#whats1').addClass("textoNormal");
-    		$('#email').addClass("textoNormal"); 		
+    		$('.textos').addClass("textoNormal");
+    		//Card
+    		$('.grid-example').addClass("s4");		
     	}
     	else{
     		//Titulos grandes 
-    		$('#titulo').addClass("titulo1");
-    		$('#titulo1').addClass("titulo1");
-    		$('#titulo2').addClass("titulo1");
+    		$('.titulos').addClass("titulo1");
     		//Titulos de contato
-    		$('#subtitulo').addClass("titulo3");
-    		$('#subtitulo1').addClass("titulo3");
-    		$('#subtitulo2').addClass("titulo3");
+    		$('.subtitulos').addClass("titulo3");
     		//Textos
-    		$('#sobre').addClass("textoGrande");
-    		$('#whats').addClass("textoGrande");
-    		$('#whats1').addClass("textoGrande");
-    		$('#email').addClass("textoGrande"); 
+    		$('.textos').addClass("textoGrande");
+    		//Card
+    		$('.grid-example').addClass("s12"); 
   		}
   	});
   	$(window).resize(function() {
@@ -143,28 +145,17 @@
     		$('#divs').addClass("col s0 m1");
     		$('#divs1').addClass("col s0 m1");
     		//Titulos grandes
-    		$('#titulo').removeClass("titulo1");
-    		$('#titulo1').removeClass("titulo1");
-    		$('#titulo2').removeClass("titulo1");
-    		$('#titulo2').addClass("titulo3");
-    		$('#titulo').addClass("titulo3");
-    		$('#titulo1').addClass("titulo3");
+    		$('.titulos').removeClass("titulo1");
+    		$('.titulos').addClass("titulo3");
     		//Titulos de contato
-    		$('#subtitulo').removeClass("titulo3");
-    		$('#subtitulo1').removeClass("titulo3");
-    		$('#subtitulo2').removeClass("titulo3");
-    		$('#subtitulo').addClass("titulo5");
-    		$('#subtitulo1').addClass("titulo5");
-    		$('#subtitulo2').addClass("titulo5");
+    		$('.subtitulos').removeClass("titulo3");
+    		$('.subtitulos').addClass("titulo5");
     		//Textos
-    		$('#sobre').removeClass("textoGrande");
-    		$('#whats').removeClass("textoGrande");
-    		$('#whats1').removeClass("textoGrande");
-    		$('#email').removeClass("textoGrande");
-    		$('#sobre').addClass("textoNormal");
-    		$('#whats').addClass("textoNormal");
-    		$('#whats1').addClass("textoNormal");
-    		$('#email').addClass("textoNormal"); 
+    		$('.textos').removeClass("textoGrande");
+    		$('.textos').addClass("textoNormal");
+    		//Cards
+    		$('.grid-example').removeClass("s12");
+    		$('.grid-example').addClass("s4");  
   		}
   		else{
   			//Conteudo total 
@@ -173,28 +164,17 @@
   			$('#divs').removeClass("col s0 m1");
   			$('#divs1').removeClass("col s0 m1");
   			//Titulos grandes
-  			$('#titulo').removeClass("titulo3");
-    		$('#titulo1').removeClass("titulo3");
-    		$('#titulo2').removeClass("titulo3");
-    		$('#titulo2').addClass("titulo1");
-    		$('#titulo').addClass("titulo1");
-    		$('#titulo1').addClass("titulo1");
+  			$('.titulos').removeClass("titulo3");
+    		$('.titulos').addClass("titulo1");
     		//Titulos de contato
-    		$('#subtitulo').removeClass("titulo5");
-    		$('#subtitulo1').removeClass("titulo5");
-    		$('#subtitulo2').removeClass("titulo5");
-    		$('#subtitulo').addClass("titulo3");
-    		$('#subtitulo1').addClass("titulo3");
-    		$('#subtitulo2').addClass("titulo3");
+    		$('.subtitulos').removeClass("titulo5");
+    		$('.subtitulos').addClass("titulo3");
     		//Textos
-    		$('#sobre').removeClass("textoNormal");
-    		$('#whats').removeClass("textoNormal");
-    		$('#whats1').removeClass("textoNormal");
-    		$('#email').removeClass("textoNormal");
-    		$('#sobre').addClass("textoGrande");
-    		$('#whats').addClass("textoGrande");
-    		$('#whats1').addClass("textoGrande");
-    		$('#email').addClass("textoGrande");
+    		$('.textos').removeClass("textoNormal");
+    		$('.textos').addClass("textoGrande");
+    		//Cards
+    		$('.grid-example').removeClass("s4");
+    		$('.grid-example').addClass("s12"); 
   		}
 	});
 </script>
